@@ -7,11 +7,16 @@ void main() {
         backgroundColor: Colors.teal,
         appBar: AppBar(
           backgroundColor: Colors.amber,
-          title: const Text('I am poor'),
+          centerTitle: true, // ✅ ADDED: Centers the AppBar title
+          title: const Text(
+            'I am rich than laiq Hussain and also rich than aqib',
+          ),
         ),
         body: Center(
           child: Image(
-            image: NetworkImage('https://images.pexels.com/photos/1054655/pexels-photo-1054655.jpeg'),
+            image: AssetImage(
+              'assets/foodpanda.png',
+            ),
           ),
         ),
       ),
