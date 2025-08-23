@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.pink,
+
         appBar: AppBar(
           backgroundColor: Colors.teal,
           title: const Text("Mazhar Hussain"),
@@ -20,25 +20,37 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Text("Mazhar  Hussain"),
-            Text("Subscribe me"),
-
-            Container(
-                height: 100,
-                width: 200,
-                color: Colors.pink,
-                child: const Center(child: Text("Container 1"))
-
-
+           const Text("Mazhar  Hussain"),
+          const  SizedBox(
+              height: 10,
+            ),
+          const  Text("Subscribe me"),
+         const   SizedBox(
+              height: 10,
             ),
 
             Container(
                 height: 100,
                 width: 200,
-                color: Colors.pink,
+                color: Colors.blue,
+                child: const Center(child: Text("Container 1"))
+
+
+            ),
+           const SizedBox(
+              height: 10,
+            ),
+
+            Container(
+                height: 100,
+                width: 200,
+                color: Colors.yellow,
                 child: const Center(child: Text("Container 2"))
 
 
+            ),
+         const   SizedBox(
+              height: 10,
             ),
             Container(
                 height: 100,
