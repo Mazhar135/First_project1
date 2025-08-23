@@ -18,15 +18,21 @@ class MyApp extends StatelessWidget {
           title: const Text("Mazhar Hussain"),
           centerTitle: true,
         ),
-        body: Column(
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+
            const Text("Mazhar  Hussain"),
+
           const  SizedBox(
-              height: 10,
+              width: 10,
             ),
+
           const  Text("Subscribe me"),
+
          const   SizedBox(
-              height: 10,
+              width: 10,
             ),
 
             Container(
@@ -38,7 +44,7 @@ class MyApp extends StatelessWidget {
 
             ),
            const SizedBox(
-              height: 10,
+              width: 10,
             ),
 
             Container(
@@ -50,8 +56,9 @@ class MyApp extends StatelessWidget {
 
             ),
          const   SizedBox(
-              height: 10,
+              width: 10,
             ),
+
             Container(
                 height: 100,
                 width: 200,
