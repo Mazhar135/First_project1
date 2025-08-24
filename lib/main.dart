@@ -12,68 +12,49 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-
         appBar: AppBar(
           backgroundColor: Colors.teal,
-          title: const Text("Mazhar Hussain"),
+          title: const Text("Mazhar Hussain",
+              style: TextStyle(fontSize: 30,fontFamily: 'Pacifico', fontWeight:FontWeight.w100),
+          ),
           centerTitle: true,
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
-          const  Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
-              children: [
-
-                Text("Mazhar Hussain"),
-                Icon(Icons.ac_unit),
-                Text("Mazhar Hussain")
-              ]
-            ),
-
-
-
-
-         const   SizedBox(
-              height: 40,
-            ),
+          const Text("Mazhar Hussain",
+            style: TextStyle(fontSize: 40,
+                fontFamily: 'Pacifico'
+                ,color:Colors.teal,
+                decoration: TextDecoration.underline),
+          ),
+            const SizedBox(height: 40),
 
             Container(
-                height: 100,
-                width: 200,
-                color: Colors.blue,
-                child: const Center(child: Text("Container 1"))
-
-
+              height: 100,
+              width: 200,
+              color: Colors.blue,
+              child: const Center(child: Text("Container 1",
+              )
+              ),
             ),
-           const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
 
             Container(
-                height: 100,
-                width: 200,
-                color: Colors.yellow,
-                child: const Center(child: Text("Container 2"))
-
-
+              height: 100,
+              width: 200,
+              color: Colors.yellow,
+              child: const Center(child: Text("Container 2")),
             ),
-         const   SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
 
             Container(
-                height: 100,
-                width: 200,
-                color: Colors.pink,
-                child: const Center(child: Text("Container 3"))
-
-
+              height: 100,
+              width: 200,
+              color: Colors.pink,
+              child: const Center(child: Text("Container 3")),
             ),
-
           ],
         ),
       ),
