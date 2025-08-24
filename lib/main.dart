@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
                 ,color:Colors.teal,
                 decoration: TextDecoration.underline),
           ),
+          const  Icon(Icons.ac_unit_outlined, color: Colors.red, size: 30),
             const SizedBox(height: 40),
 
             Container(
